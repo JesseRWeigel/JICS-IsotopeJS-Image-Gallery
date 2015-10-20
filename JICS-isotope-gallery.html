@@ -9,7 +9,7 @@
     for (var i = 0; i < images.length; i++) {
       imageLink = $(images[i]).attr('href'); // Loops over the image link containers and get the url
 
-      $('.grid').append('<img class="lightbox" src="' + imageLink + '">'); // Adds each image to the grid div
+      $('.grid').append('<img class="isotope-image" src="' + imageLink + '">'); // Adds each image to the grid div
     }
 
 
@@ -17,7 +17,7 @@
       // init Isotope
       var $grid = $('.grid').isotope({
         //Add settings for isotope here (see http://isotope.metafizzy.co/)
-        itemSelector: '.lightbox',
+        itemSelector: '.isotope-image',
         layoutMode: 'fitRows'
       });
     });
