@@ -1,0 +1,30 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script>
+  $( function() {
+    var images = $('.lightbox'); //Stores all of the image a tag containers in an array
+    var imageLink = ''; //Creates a place to store the image url
+
+    $('.ccGallery').hide(); // Hides the default thumbnail gallery
+
+    for (var i = 0; i < images.length; i++) {
+      imageLink = $(images[i]).attr('href'); // Loops over the image link containers and get the url
+
+      $('.grid').append('<img class="lightbox" src="' + imageLink + '">'); // Adds each image to the grid div
+    }
+
+
+  $(window).load(function(){
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        //Add settings for isotope here (see http://isotope.metafizzy.co/)
+        itemSelector: '.lightbox',
+        layoutMode: 'fitRows'
+      });
+    });
+  });
+</script>
+
+<!-- Container for images. Place this div where you want to images to appear. -->
+<div class="grid">
+
+</div>
