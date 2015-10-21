@@ -8,3 +8,5 @@ After adding this code, place the div with a class of grid (included in the JICS
 For more information on isotope.js, please visit http://isotope.metafizzy.co/
 
 This code has been tested with JICS v8.2.0.
+
+Please note that this may not be the best way to implement this functionality. This code is designed to work if you only have access to edit portlets. If you have access to the JICS file structure, you may find it better to include some or all of this code in another location.
