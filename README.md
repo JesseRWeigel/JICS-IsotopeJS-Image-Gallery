@@ -6,3 +6,5 @@ This code can be added directly into the free-form content editor. Be sure to us
 After adding this code, place the div with a class of grid (included in the JICS-Isotope-gallery.html file) into your portlet code wherever you want the images to display. Upload your images through the default uploader. No need to drag and drop them into the text area. The images will automatically display in your portlet.
 
 For more information on isotope.js, please visit http://isotope.metafizzy.co/
+
+This code has been tested with JICS v8.2.0.
